@@ -124,4 +124,22 @@ body {
   color: #333;
   opacity: 0;
   visibility: hidden;
+  transition: 0.5s;
+}
+.navigation.open .menuToggle::before {
+  transform: translateY(0px) rotate(45deg);
+}
+.navigation.open {
+  width: 250px;
+}
+.navigation.open .menuToggle::after {
+  transform: translateY(0px) rotate(-45deg);
+  box-shadow: 0 0 0 #333;
+}
+.navigation.open ul li.active {
+  transform: translateX(15px);
+}
+.navigation.open ul li a .text {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
